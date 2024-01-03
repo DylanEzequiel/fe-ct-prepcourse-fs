@@ -4,6 +4,12 @@ function sumarArray(arrayOfNumbers, cb) {
   // Este resultado debes pasárselo como argumento al callback recibido.
   // NOTA: no debes retOrnar nada.
   // Tu código:
+  let arg=0;
+  arrayOfNumbers.forEach(element => {
+    arg=element+arg
+    return arg
+  });
+  let resultado=cb(arg)
 }
 
 module.exports = sumarArray;
